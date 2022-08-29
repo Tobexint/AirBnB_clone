@@ -1,4 +1,6 @@
-This project is the first step towards building a full web application(an AirBnB clone). This first step consists of a custom command-line interface for data management and the base classes for the storage of this data.
+0x00. AirBnB clone - The console
+This project is the first step towards building a full web application (which is an AirBnB clone). This first step consists of a custom command-line interface for data management, and the base classes for the storage of this data.
+
 Step 1: Write a command interpreter (The Console)
 Functionalities of this command interpreter:
 -Create a new object (ex: a new User or a new Place)
@@ -27,7 +29,9 @@ EOF  help  quit
 (hbnb) 
 (hbnb) quit
 $
+
 But also in non-interactive mode:
+
 $ echo "help" | ./console.py
 (hbnb)
 
@@ -47,3 +51,6 @@ Documented commands (type help <topic>):
 EOF  help  quit
 (hbnb) 
 $
+
+
+
