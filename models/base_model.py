@@ -27,7 +27,7 @@ class BaseModel:
     def __str__(self):
         """Returns the class name, id and attribute dictionary"""
         class_name = self.__class__.__name__
-        return "[{}] ({}) {}".format(clname, self.id, self.__dict__)
+        return "[{}] ({}) {}".format(class_name, self.id, self.__dict__)
 
     def save(self):
         """ updates the public instance attribute updated_at with
