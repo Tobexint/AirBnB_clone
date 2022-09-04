@@ -21,6 +21,16 @@ class HBNBCommand(cmd.Cmd):
 
     l_c = ['create', 'show', 'update', 'all', 'destroy', 'count']
 
+    def precmd(self, arg):
+        """parses command input"""
+        if '.' in arg and '(' in arg and ')' in arg:
+            cls = arg.split('.')
+            cnd = cls[1].split('(')
+            args = cnd[1].split(')')
+            if cls[0] in HBNBCommand.l_classes and cnd[0] in HBNBCommand.l_c:
+                arg = cnd[0] + ' ' + cls[0] + ' ' + args[0]
+        return arg
+
     def do_quit(self, line):
         """ Quit command to exit the command interpreter """
         return True
