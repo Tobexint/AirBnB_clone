@@ -1,4 +1,4 @@
-0x00. AirBnB clone - The console
+AirBnB clone - The console
 This project is the first step towards building a full web application (which is an AirBnB clone). This first step consists of a custom command-line interface for data management, and the base classes for the storage of this data.
 
 Step 1: Write a command interpreter (The Console)
