@@ -121,6 +121,16 @@ class HBNBCommand(cmd.Cmd):
                     list_instances += [value.__str__()]
             print(list_instances)
 
+    def do_count(self, arg):
+        """Usage: count <class> or <class>.count()
+        Retrieve the number of instances of a given class."""
+        argl = parse(arg)
+        count = 0
+        for obj in storage.all().values():
+            if argl[0] == obj.__class__.__name__:
+                count += 1
+        print(count)
+
     def do_update(self, arg):
         """ Updates an instance based on the class name and id
             by adding or updating attribute
