@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Defines the entry point of the command interpreter """
+""" Defines the entry point of the command interpreter. """
 import cmd
 import json
 from models import storage
